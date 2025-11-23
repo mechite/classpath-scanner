@@ -24,8 +24,8 @@ import android.content.Context;
  *     You can set this within an activity using ContextHolder.setContext(this);
  * </p>
  */
-public class AndriodContextHolder {
-  private AndriodContextHolder() {
+public class AndroidContextHolder {
+  private AndroidContextHolder() {
   }
 
   /**
@@ -44,6 +44,6 @@ public class AndriodContextHolder {
    * @param context The Android context to use to be able to scan assets and classes for migrations.
    */
   public static void setContext(Context context) {
-    AndriodContextHolder.context = context;
+    AndroidContextHolder.context = context;
   }
 }
