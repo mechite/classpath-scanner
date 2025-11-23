@@ -43,7 +43,7 @@ public class AndroidScanner implements ResourceAndClassScanner {
     this.classLoader = (PathClassLoader) classLoader;
     context = AndroidContextHolder.getContext();
     if (context == null) {
-      throw new IllegalStateException("Unable to create scanner. Within an activity fix this with io.avaje.classpath.scanner.android.ContextHolder.setContext(this);");
+      throw new IllegalStateException("Unable to create scanner. Within an activity fix this with io.avaje.classpath.scanner.android.AndroidContextHolder.setContext(this);");
     }
   }
 
